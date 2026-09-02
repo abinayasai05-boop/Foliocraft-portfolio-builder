@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FolioCraft - Portfolio Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Folio<span>Craft</span></div>
+    <p>Build Your Professional Portfolio</p>
+</header>
+
+<div class="container">
+
+    <!-- BUILDER -->
+    <section class="builder">
+
+        <h2>Portfolio Builder</h2>
+
+        <label>Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label>Professional Title</label>
+        <input type="text" id="role" placeholder="e.g. Web Developer">
+
+        <label>About Me</label>
+        <textarea id="about" placeholder="Write something about yourself"></textarea>
+
+        <label>Email</label>
+        <input type="email" id="email" placeholder="example@gmail.com">
+
+        <label>Phone</label>
+        <input type="text" id="phone" placeholder="+91 9876543210">
+
+        <label>Location</label>
+        <input type="text" id="location" placeholder="Chennai, India">
+
+        <label>Skills</label>
+        <input type="text" id="skills" placeholder="HTML, CSS, JavaScript, Python">
+
+        <h3>Project 1</h3>
+
+        <input type="text" id="project1" placeholder="Project Name">
+
+        <textarea id="projectDesc1"
+            placeholder="Project Description"></textarea>
+
+        <h3>Project 2</h3>
+
+        <input type="text" id="project2" placeholder="Project Name">
+
+        <textarea id="projectDesc2"
+            placeholder="Project Description"></textarea>
+
+        <label>GitHub</label>
+        <input type="text" id="github" placeholder="github.com/username">
+
+        <label>LinkedIn</label>
+        <input type="text" id="linkedin" placeholder="linkedin.com/in/username">
+
+        <label>Choose Theme</label>
+
+        <select id="theme">
+            <option value="purple">Purple</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="dark">Dark</option>
+        </select>
+
+        <button onclick="generatePortfolio()">
+            Generate Portfolio
+        </button>
+
+        <button class="clear-btn" onclick="clearForm()">
+            Clear
+        </button>
+
+    </section>
+
+
+    <!-- PREVIEW -->
+
+    <section class="preview">
+
+        <h2>Live Preview</h2>
+
+        <div id="portfolio">
+
+            <div class="portfolio-header">
+
+                <div class="profile-circle">
+                    <span id="previewInitial">A</span>
+                </div>
+
+                <h1 id="previewName">Your Name</h1>
+
+                <h3 id="previewRole">
+                    Your Professional Title
+                </h3>
+
+                <p id="previewLocation">
+                    📍 Your Location
+                </p>
+
+            </div>
+
+
+            <div class="portfolio-section">
+
+                <h2>About Me</h2>
+
+                <p id="previewAbout">
+                    Your introduction will appear here.
+                </p>
+
+            </div>
+
+
+            <div class="portfolio-section">
+
+                <h2>Skills</h2>
+
+                <div id="previewSkills" class="skill-container">
+
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="portfolio-section">
+
+                <h2>Projects</h2>
+
+                <div class="project-card">
+
+                    <h3 id="previewProject1">
+                        Project Name
+                    </h3>
+
+                    <p id="previewProjectDesc1">
+                        Project description
+                    </p>
+
+                </div>
+
+
+                <div class="project-card">
+
+                    <h3 id="previewProject2">
+                        Project Name
+                    </h3>
+
+                    <p id="previewProjectDesc2">
+                        Project description
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="portfolio-section">
+
+                <h2>Contact</h2>
+
+                <p>
+                    📧 <span id="previewEmail">
+                        example@gmail.com
+                    </span>
+                </p>
+
+                <p>
+                    📱 <span id="previewPhone">
+                        +91 9876543210
+                    </span>
+                </p>
+
+                <div class="social">
+
+                    <a id="previewGithub"
+                       href="#"
+                       target="_blank">
+                        GitHub
+                    </a>
+
+                    <a id="previewLinkedin"
+                       href="#"
+                       target="_blank">
+                        LinkedIn
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2026 FolioCraft | Portfolio Builder</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
